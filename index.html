@@ -1,47 +1,245 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hostessenwerk</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root{
+      --black:#151515;
+      --white:#ffffff;
+      --gray:#f3f3f3;
+      --accent:#7a2d7a; /* Rahmenfarbe für Hero-Bilder */
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      color:#111;
+      background:var(--white);
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    /* Layout */
+    .wrap{ max-width: 920px; margin: 0 auto; }
+    .pad{ padding: 22px 18px; }
+
+    /* Typo */
+    .brand{
+      font-size: clamp(44px, 6vw, 72px);
+      line-height: 0.95;
+      margin: 0;
+      letter-spacing: -0.5px;
+    }
+    .subline{
+      margin: 8px 0 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color:#222;
+    }
+    h2.section-title{
+      margin:0;
+      font-size: 34px;
+      font-weight: 500;
+    }
+    h3.bar-title{
+      margin:0;
+      font-size: 18px;
+      font-weight: 500;
+      text-align:center;
+      letter-spacing: 0.2px;
+    }
+    p{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.55;
+      margin: 0;
+      color:#1c1c1c;
+      font-size: 14px;
+    }
+
+    /* Hero */
+    .hero{ padding: 26px 18px 10px; }
+    .hero-images{
+      margin: 18px 0 16px;
+      border: 6px solid var(--accent);
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow:hidden;
+    }
+    .hero-images img{
+      width:100%;
+      height: 190px;
+      object-fit: cover;
+      display:block;
+    }
+    .cta-row{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    /* Buttons */
+    .btn{
+      display:block;
+      text-align:center;
+      text-decoration:none;
+      background: #1a1a1a;
+      color:#fff;
+      padding: 14px 12px;
+      border-radius: 2px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 16px;
+    }
+    .btn:hover{ opacity:0.92; }
+
+    /* Dark sections / bars */
+    .dark{
+      background: var(--black);
+      color: var(--white);
+    }
+    .dark .section-title{ color: var(--white); }
+    .bar{
+      padding: 12px 14px;
+      background: var(--black);
+      color: var(--white);
+    }
+    .bar.light{
+      background: var(--white);
+      color: #111;
+      border: 1px solid #ddd;
+    }
+
+    /* Services list (white cards on dark) */
+    .service-list{
+      display:grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .service-pill{
+      background: var(--white);
+      border: 1px solid #ddd;
+      padding: 14px 12px;
+      text-align:center;
+      font-size: 18px;
+      font-weight: 500;
+      color:#111;
+    }
+
+    /* About split */
+    .about-grid{
+      display:grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 0;
+      background: var(--white);
+    }
+    .about-card{
+      padding: 18px;
+    }
+    .about-head{
+      display:flex;
+      align-items:flex-end;
+      gap: 12px;
+      margin: 0 0 10px;
+    }
+    .about-head h2{
+      margin:0;
+      font-size: 28px;
+      font-weight: 500;
+    }
+    .about-line{
+      height:1px;
+      background:#111;
+      flex:1;
+      margin-bottom: 8px;
+    }
+    .about-img{
+      min-height: 280px;
+      background:#eee;
+    }
+    .about-img img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      display:block;
+    }
+
+    /* Service detail sections */
+    .detail{
+      padding: 18px;
+      text-align:center;
+    }
+    .detail .headline{
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 14px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .detail p{
+      max-width: 640px;
+      margin: 0 auto 16px;
+      font-size: 14px;
+    }
+    .detail .btn{
+      width: 240px;
+      margin: 0 auto;
+    }
+
+    /* Footer spacing */
+    .spacer{ height: 14px; }
+
+    /* Responsive */
+    @media (max-width: 820px){
+      .hero-images{ grid-template-columns: repeat(2, 1fr); }
+      .hero-images img{ height: 180px; }
+      .cta-row{ grid-template-columns: 1fr; }
+      .about-grid{ grid-template-columns: 1fr; }
+      .about-img{ min-height: 240px; }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="wrap">
 
-  <!-- Block 1: Hero -->
-  <section>
-    <h1>Überschrift Block 1</h1>
-    <p>Text Block 1</p>
-  </section>
+    <!-- BLOCK 1: HERO -->
+    <section class="hero" id="start">
+      <h1 class="brand">Hostessenwerk</h1>
+      <p class="subline">Premium Hostessen &amp; Promotion Services für starke Markenauftritte.</p>
 
-  <!-- Block 2 -->
-  <section>
-    <h2>Überschrift Block 2</h2>
-    <p>Text Block 2</p>
-  </section>
+      <div class="hero-images" aria-label="Hero Bildstrecke">
+        <img src="hero-1.jpg" alt="Hostess 1">
+        <img src="hero-2.jpg" alt="Hostess 2">
+        <img src="hero-3.jpg" alt="Hostess 3">
+        <img src="hero-4.jpg" alt="Hostess 4">
+      </div>
 
-  <!-- Block 3 -->
-  <section>
-    <h2>Überschrift Block 3</h2>
-    <p>Text Block 3</p>
-  </section>
+      <div class="cta-row">
+        <a class="btn" href="#anfrage">Jetzt Leistungen anfragen</a>
+        <a class="btn" href="#bewerbung">Jetzt Hostesse werden</a>
+      </div>
+    </section>
 
-  <!-- Block 4 -->
-  <section>
-    <h2>Überschrift Block 4</h2>
-    <p>Text Block 4</p>
-  </section>
+    <div class="spacer"></div>
 
-  <!-- Block 5 -->
-  <section>
-    <h2>Überschrift Block 5</h2>
-    <p>Text Block 5</p>
-  </section>
+    <!-- BLOCK 2: UNSERE LEISTUNGEN (DARK + 3 PILLS) -->
+    <section class="dark pad" id="leistungen">
+      <h2 class="section-title">Unsere Leistungen</h2>
 
-  <!-- Block 6 -->
-  <section>
-    <h2>Überschrift Block 6</h2>
-    <p>Text Block 6</p>
-  </section>
+      <div class="service-list">
+        <div class="service-pill">Messe &amp; Event Hostessen</div>
+        <div class="service-pill">Promotion &amp; Brand Activation</div>
+        <div class="service-pill">Social Media Content</div>
+      </div>
+    </section>
 
-</body>
-</html>
+    <!-- BLOCK 3: ÜBER UNS (SPLIT) -->
+    <section class="about-grid" id="ueber-uns">
+      <div class="about-card">
+        <div class="about-head">
+          <h2>Über uns</h2>
+          <div class="about-line"></div>
+        </div>
+
+        <p
