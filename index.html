@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hostessenwerk</title>
 
-<meta name="description" content="Hostessenwerk – Premium Hostessen- und Promotionagentur mit Sitz in Düsseldorf. Professionelle Markenrepräsentanz für Events, Messen und Brand Activations in ganz NRW.">
+<meta name="description" content="Hostessenwerk – Premium Hostessen- und Promotionagentur mit Sitz in Düsseldorf. Markenpräsenz, die bleibt. Projekte in ganz NRW.">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -31,7 +31,7 @@ body{
 
 /* LAYOUT */
 .wrap{max-width:920px;margin:0 auto;}
-.pad{padding:88px 24px;}
+.pad{padding:100px 24px;}
 .spacer{height:120px;}
 
 /* NAVIGATION */
@@ -50,25 +50,25 @@ body{
   align-items:center;
 }
 .nav-brand{
-  font-family:'Libre Baskerville', serif;
+  font-family:'Source Serif 4', serif;
   font-size:18px;
-  font-weight:700;
+  font-weight:300;
 }
 .nav a{
   text-decoration:none;
   color:#121212;
   margin-left:32px;
   font-size:13px;
-  letter-spacing:.1em;
+  letter-spacing:.14em;
 }
 
-/* TYPOGRAFIE */
+/* TYPO */
 .brand{
-  font-family:'Libre Baskerville', serif;
-  font-size:clamp(56px,8vw,96px);
+  font-family:'Source Serif 4', serif;
+  font-size:clamp(60px,8vw,104px);
   line-height:1.05;
   margin:0;
-  font-weight:400;
+  font-weight:300;
 }
 .subline{
   margin-top:28px;
@@ -77,10 +77,10 @@ body{
   color:#2b2b2b;
 }
 .section-title{
-  font-family:'Libre Baskerville', serif;
+  font-family:'Source Serif 4', serif;
   font-size:34px;
-  font-weight:400;
-  margin-bottom:32px;
+  font-weight:300;
+  margin-bottom:40px;
 }
 p{
   font-size:14px;
@@ -90,10 +90,10 @@ p{
 
 /* HERO */
 .hero{
-  padding:120px 24px 72px;
+  padding:140px 24px 80px;
 }
 .hero-images{
-  margin-top:72px;
+  margin-top:80px;
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:16px;
@@ -103,6 +103,7 @@ p{
   height:260px;
   object-fit:cover;
   display:block;
+  filter:grayscale(12%);
 }
 
 /* EDITORIAL LINE */
@@ -110,28 +111,27 @@ p{
   width:160px;
   height:1px;
   background:#121212;
-  margin:96px 0;
+  margin:120px 0;
 }
 
-/* LEISTUNGEN */
+/* SERVICES */
 .services{
   display:grid;
-  gap:32px;
-  font-family:'Libre Baskerville', serif;
-  font-size:21px;
+  gap:36px;
+  font-family:'Source Serif 4', serif;
+  font-size:22px;
+  font-weight:300;
 }
-
-/* ABOUT */
-.about p{margin-bottom:22px;}
 
 /* CTA */
 .cta{
-  margin-top:56px;
+  margin-top:60px;
 }
 .cta a{
-  font-family:'Libre Baskerville', serif;
+  font-family:'Source Serif 4', serif;
   text-decoration:none;
   font-size:18px;
+  font-weight:300;
   color:#121212;
   border-bottom:1px solid #121212;
   padding-bottom:6px;
@@ -139,14 +139,14 @@ p{
 
 /* RESPONSIVE */
 @media(max-width:900px){
-  .hero{padding-top:88px;}
+  .hero{padding-top:100px;}
   .hero-images{
     grid-template-columns:repeat(2,1fr);
-    margin-top:56px;
+    margin-top:60px;
   }
   .hero-images img{height:220px;}
-  .pad{padding:64px 20px;}
-  .rule{margin:72px 0;}
+  .pad{padding:72px 20px;}
+  .rule{margin:80px 0;}
   .spacer{height:80px;}
 }
 </style>
@@ -171,15 +171,14 @@ p{
 <section class="hero">
   <h1 class="brand">Hostessenwerk</h1>
   <p class="subline">
-    Eine Hostessen- und Promotionagentur für Marken,
-    die Wert auf Präsenz, Qualität und eine stimmige Außenwirkung legen.
+    Markenpräsenz, die bleibt — präzise, stilvoll, professionell.
   </p>
 
   <div class="hero-images">
-    <img src="hero-1.jpg" alt="Hostess im Markenumfeld">
-    <img src="hero-2.jpg" alt="Eventhostess im Einsatz">
-    <img src="hero-3.jpg" alt="Promotionteam auf Veranstaltung">
-    <img src="hero-4.jpg" alt="Markenauftritt mit Hostessen">
+    <img src="hero-1.jpg" alt="">
+    <img src="hero-2.jpg" alt="">
+    <img src="hero-3.jpg" alt="">
+    <img src="hero-4.jpg" alt="">
   </div>
 </section>
 
@@ -198,24 +197,19 @@ p{
 <div class="rule"></div>
 
 <!-- ÜBER UNS -->
-<section id="ueber-uns" class="pad about">
+<section id="ueber-uns" class="pad">
   <h2 class="section-title">Über uns</h2>
-
   <p>
-    Hostessenwerk steht für professionelle Markenrepräsentanz – stilvoll,
-    aufmerksam und auf den jeweiligen Markenauftritt abgestimmt.
+    Hostessenwerk steht für professionelle Markenrepräsentanz – klar,
+    zuverlässig und auf den jeweiligen Markenauftritt abgestimmt.
   </p>
-
   <p>
-    Unsere Arbeit orientiert sich am Charakter und den Zielen einer Marke.
-    Ob präsent oder zurückhaltend, aufmerksam oder aktiv – entscheidend ist,
-    dass Auftreten, Kommunikation und Wirkung miteinander im Einklang stehen.
+    Unsere Arbeit folgt dem Anspruch, Marken glaubwürdig,
+    souverän und wirkungsvoll nach außen zu vertreten.
   </p>
-
   <p>
-    Mit Sitz in Düsseldorf realisieren wir Projekte in ganz Nordrhein-Westfalen.
-    Wir arbeiten für Unternehmen, Agenturen und Marken, die Wert auf Qualität,
-    Verlässlichkeit und eine professionelle Umsetzung legen.
+    Mit Sitz in Düsseldorf realisieren wir Projekte in ganz Nordrhein-Westfalen
+    für Unternehmen, Agenturen und Marken mit Verantwortung.
   </p>
 </section>
 
