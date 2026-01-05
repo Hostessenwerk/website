@@ -1,378 +1,200 @@
-<!DOCTYPE html>
+A<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hostessenwerk</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hostessenwerk</title>
 
-  <!-- Fonts: Premium Headline + Business Body -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Hostessenwerk – Editorial geführte Premium-Hostessen- und Promotionagentur mit Sitz in Düsseldorf. Exklusive Markenauftritte in ganz NRW.">
 
-  <style>
-    :root{
-      --black:#151515;
-      --white:#ffffff;
-      --gray:#f3f3f3;
-      --accent:#7a2d7a; /* Rahmenfarbe für Hero */
-      --shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      color:#111;
-      background:var(--white);
-      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
+<style>
+:root{
+  --black:#121212;
+  --gray:#2a2a2a;
+  --line:rgba(0,0,0,.08);
+}
 
-    /* Layout */
-    .wrap{ max-width: 980px; margin: 0 auto; }
-    .pad{ padding: 22px 18px; }
-    .spacer{ height: 14px; }
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
 
-    /* Typo */
-    .brand{
-      font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
-      font-size: clamp(46px, 6vw, 78px);
-      line-height: 0.95;
-      margin: 0;
-      letter-spacing: 0.01em;
-      font-weight: 700;
-    }
+body{
+  margin:0;
+  font-family:Inter, system-ui, sans-serif;
+  background:#fff;
+  color:#121212;
+}
 
-    .subline{
-      margin: 10px 0 0;
-      font-size: 16px;
-      color:#242424;
-      font-weight: 500;
-    }
+/* LAYOUT */
+.wrap{max-width:880px;margin:0 auto;}
+.pad{padding:72px 20px;}
+.spacer{height:96px;}
 
-    .section-title{
-      font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
-      margin:0;
-      font-size: clamp(26px, 3.2vw, 40px);
-      font-weight: 700;
-      letter-spacing: 0.01em;
-    }
+/* NAV */
+.nav{
+  position:sticky;
+  top:0;
+  background:#fff;
+  z-index:10;
+}
+.nav-inner{
+  max-width:880px;
+  margin:0 auto;
+  padding:24px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.nav-brand{
+  font-family:Fraunces, serif;
+  font-size:18px;
+  font-weight:600;
+}
+.nav a{
+  text-decoration:none;
+  color:#121212;
+  margin-left:28px;
+  font-size:13px;
+  letter-spacing:.08em;
+}
 
-    p{
-      line-height: 1.65;
-      margin: 0;
-      color:#1c1c1c;
-      font-size: 14px;
-    }
+/* TYPO */
+.brand{
+  font-family:Fraunces, serif;
+  font-size:clamp(56px,8vw,96px);
+  line-height:.9;
+  margin:0;
+  font-weight:600;
+}
+.subline{
+  margin-top:24px;
+  font-size:15px;
+  max-width:460px;
+  color:#2a2a2a;
+}
+.section-title{
+  font-family:Fraunces, serif;
+  font-size:32px;
+  font-weight:500;
+  margin-bottom:24px;
+}
+p{
+  font-size:14px;
+  line-height:1.8;
+  max-width:520px;
+}
 
-    /* Hero */
-    .hero{ padding: 26px 18px 10px; }
-    .hero-images{
-      margin: 18px 0 16px;
-      border: 6px solid var(--accent);
-      display:grid;
-      grid-template-columns: repeat(4, 1fr);
-      overflow:hidden;
-      background:#fff;
-    }
-    .hero-images img{
-      width:100%;
-      height: 190px;
-      object-fit: cover;
-      display:block;
-      background:#eee;
-    }
+/* HERO */
+.hero{padding:96px 20px 64px;}
 
-    .cta-row{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 14px;
-    }
+/* EDITORIAL LINE */
+.rule{
+  width:120px;
+  height:1px;
+  background:#121212;
+  margin:48px 0;
+}
 
-    /* Buttons */
-    .btn{
-      display:block;
-      text-align:center;
-      text-decoration:none;
-      background: #1a1a1a;
-      color:#fff;
-      padding: 14px 12px;
-      border-radius: 2px;
-      font-size: 16px;
-      font-weight: 600;
-      letter-spacing: 0.2px;
-    }
-    .btn:hover{ opacity:0.92; }
+/* SERVICES */
+.services{
+  display:grid;
+  gap:28px;
+  font-family:Fraunces, serif;
+  font-size:22px;
+}
 
-    /* Dark sections / bars */
-    .dark{
-      background: var(--black);
-      color: var(--white);
-    }
-    .dark .section-title{ color: var(--white); }
-    .bar{
-      padding: 12px 14px;
-      background: var(--black);
-      color: var(--white);
-    }
-    .bar-title{
-      margin:0;
-      font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
-      font-size: 18px;
-      font-weight: 700;
-      text-align:center;
-      letter-spacing: 0.01em;
-    }
+/* ABOUT */
+.about p{margin-bottom:18px;}
 
-    /* Services list (white cards on dark) */
-    .service-list{
-      display:grid;
-      gap: 12px;
-      margin-top: 14px;
-    }
-    .service-pill{
-      background: var(--white);
-      border: 1px solid #ddd;
-      padding: 14px 12px;
-      text-align:center;
-      font-size: 18px;
-      font-weight: 600;
-      color:#111;
-      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
+/* CTA */
+.cta{
+  margin-top:48px;
+}
+.cta a{
+  font-family:Fraunces, serif;
+  text-decoration:none;
+  font-size:18px;
+  color:#121212;
+  border-bottom:1px solid #121212;
+  padding-bottom:4px;
+}
 
-    /* About split */
-    .about-grid{
-      display:grid;
-      grid-template-columns: 1.12fr 0.88fr;
-      gap: 0;
-      background: var(--white);
-      border-top: 1px solid #e9e9e9;
-    }
-    .about-card{
-      padding: 20px 18px;
-    }
-    .about-head{
-      display:flex;
-      align-items:flex-end;
-      gap: 12px;
-      margin: 0 0 10px;
-    }
-    .about-head h2{
-      margin:0;
-      font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-    }
-    .about-line{
-      height:1px;
-      background:#111;
-      flex:1;
-      margin-bottom: 10px;
-      opacity: 0.9;
-    }
-    .about-text{
-      display:grid;
-      gap: 12px;
-    }
-
-    .about-img{
-      min-height: 330px;
-      background:#eee;
-      border-left: 1px solid #e9e9e9;
-    }
-    .about-img img{
-      width:100%;
-      height:100%;
-      object-fit: cover;
-      display:block;
-      background:#eee;
-    }
-
-    /* Service detail sections */
-    .detail{
-      padding: 18px;
-      text-align:center;
-      border-bottom: 1px solid #efefef;
-    }
-    .detail .headline{
-      font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
-      font-size: 18px;
-      font-weight: 700;
-      margin: 0 0 14px;
-      letter-spacing: 0.01em;
-    }
-    .detail p{
-      max-width: 680px;
-      margin: 0 auto 16px;
-      font-size: 14px;
-    }
-    .detail .btn{
-      width: 260px;
-      margin: 0 auto;
-    }
-
-    /* Responsive */
-    @media (max-width: 860px){
-      .hero-images{ grid-template-columns: repeat(2, 1fr); }
-      .hero-images img{ height: 180px; }
-      .cta-row{ grid-template-columns: 1fr; }
-      .about-grid{ grid-template-columns: 1fr; }
-      .about-img{ min-height: 260px; border-left: none; border-top: 1px solid #e9e9e9; }
-    }
-  </style>
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero{padding-top:72px;}
+  .spacer{height:64px;}
+}
+</style>
 </head>
 
 <body>
-  <div class="wrap">
 
-    <!-- BLOCK 1: HERO -->
-    <section class="hero" id="start">
-      <h1 class="brand">Hostessenwerk</h1>
-      <p class="subline">Premium Hostessen &amp; Promotion Services für starke Markenauftritte.</p>
-
-      <div class="hero-images" aria-label="Hero Bildstrecke">
-        <!-- Dateien im Repo müssen exakt so heißen: hero-1.jpg ... hero-4.jpg -->
-        <img src="hero-1.jpg" alt="Hostess 1">
-        <img src="hero-2.jpg" alt="Hostess 2">
-        <img src="hero-3.jpg" alt="Hostess 3">
-        <img src="hero-4.jpg" alt="Hostess 4">
-      </div>
-
-      <div class="cta-row">
-        <a class="btn" href="#anfrage">Jetzt Leistungen anfragen</a>
-        <a class="btn" href="#bewerbung">Jetzt Hostesse werden</a>
-      </div>
-    </section>
-
-    <div class="spacer"></div>
-
-    <!-- BLOCK 2: UNSERE LEISTUNGEN -->
-    <section class="dark pad" id="leistungen">
-      <h2 class="section-title">Unsere Leistungen</h2>
-
-      <div class="service-list">
-        <div class="service-pill">Messe &amp; Event Hostessen</div>
-        <div class="service-pill">Promotion &amp; Brand Activation</div>
-        <div class="service-pill">Social Media Content</div>
-      </div>
-    </section>
-
-    <!-- BLOCK 3: ÜBER UNS (TEXT ERWEITERT) -->
-    <section class="about-grid" id="ueber-uns">
-      <div class="about-card">
-        <div class="about-head">
-          <h2>Über uns</h2>
-          <div class="about-line"></div>
-        </div>
-
-        <div class="about-text">
-          <p>
-            Hostessenwerk steht für erstklassige Markenrepräsentanz, exzellente Servicequalität und messbare Wirkung.
-            Wir bringen Menschen, Marken und Momente zusammen – mit einem Anspruch, der über „präsent sein“ hinausgeht.
-            Unser Fokus liegt auf professioneller Ausstrahlung, souveräner Kommunikation und einem Auftritt, der Vertrauen schafft.
-          </p>
-
-          <p>
-            Wir stellen Teams zusammen, die zu Ihrer Marke passen: optisch, in der Tonalität und im Mindset.
-            Ob Messe, Event, Promotion oder exklusive Brand Activation – wir sorgen dafür, dass Ihre Botschaft dort ankommt,
-            wo Relevanz entsteht: im direkten Kontakt mit Ihrer Zielgruppe. Dabei denken wir nicht in Einzelaktionen,
-            sondern in einem durchgängigen Serviceprozess – von der Auswahl über Briefings bis zur operativen Umsetzung vor Ort.
-          </p>
-
-          <p>
-            Unser Qualitätsstandard ist klar: verlässlich, strukturiert und performance-orientiert.
-            Wir setzen auf klare Kommunikation, schnelle Reaktionszeiten und eine saubere Abstimmung mit Projektleitung,
-            Venue und Gewerken. So entstehen reibungslose Abläufe, eine starke Präsenz am Touchpoint und ein Gesamterlebnis,
-            das Ihre Marke sichtbar stärkt – in Sympathie, Wiedererkennung und Vertrauen.
-          </p>
-
-          <div style="margin-top:14px;">
-            <a class="btn" href="#anfrage">Jetzt unverbindlich anfragen</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-img">
-        <!-- Datei im Repo muss exakt so heißen: about.jpg -->
-        <img src="about.jpg" alt="Über uns – Bild">
-      </div>
-    </section>
-
-    <!-- BLOCK 4: MESSE & EVENT HOSTESSEN -->
-    <section id="messe-event">
-      <div class="bar">
-        <h3 class="bar-title">Messe &amp; Event Hostessen</h3>
-      </div>
-
-      <div class="detail">
-        <div class="headline">Ein Markenauftritt, der Sichtbarkeit in Sympathie und Vertrauen überführt.</div>
-        <p>
-          Wir sorgen für eine professionelle, markengerechte Präsenz, die nicht nur wahrgenommen wird, sondern echte Verbindung schafft.
-          Durch gezielte Auswahl, souveränes Auftreten und reibungslose Organisation wird Ihr Auftritt zum positiven Markenerlebnis.
-        </p>
-        <a class="btn" href="#anfrage">Anfrage stellen</a>
-      </div>
-    </section>
-
-    <!-- BLOCK 5: SOCIAL MEDIA CONTENT -->
-    <section id="social-media">
-      <div class="bar">
-        <h3 class="bar-title">Social Media Content</h3>
-      </div>
-
-      <div class="detail">
-        <p>
-          Zielgruppenrelevanter Content mit hoher Wiedererkennung. Wir entwickeln Inhalte, die strategisch auf Ihre Marke einzahlen
-          und nachhaltig im Gedächtnis bleiben. Durch klare Botschaften, konsistente Bildsprache und kanaladäquate Umsetzung
-          wird Sichtbarkeit in Wahrnehmung übersetzt.
-        </p>
-        <a class="btn" href="#anfrage">Projekt anfragen</a>
-      </div>
-    </section>
-
-    <!-- BLOCK 6: PROMOTION & BRAND ACTIVATION -->
-    <section id="promotion">
-      <div class="bar">
-        <h3 class="bar-title">Promotion &amp; Brand Activation</h3>
-      </div>
-
-      <div class="detail">
-        <p>
-          Wir positionieren Ihre Marke gezielt in aufmerksamkeitsstarken Touchpoints. Durch präzise Markenaktivierung bringen wir Ihre
-          Botschaft dorthin, wo Relevanz entsteht – ob live, im urbanen Raum oder im direkten Kundenkontakt: Wir schaffen Präsenz mit Wirkung.
-        </p>
-        <a class="btn" href="#anfrage">Content-Produktion anfragen</a>
-      </div>
-    </section>
-
-    <!-- ANKER: ANFRAGE -->
-    <section class="dark pad" id="anfrage">
-      <h2 class="section-title">Anfrage</h2>
-      <p style="color:#fff; opacity:0.9; margin-top:10px;">
-        Schreiben Sie uns kurz, worum es geht (Ort, Datum, Umfang). Wir melden uns zeitnah mit einem passenden Setup.
-      </p>
-      <div style="margin-top:14px;">
-        <!-- TODO: E-Mail ersetzen -->
-        <a class="btn" href="mailto:DEINEEMAIL@DOMAIN.DE?subject=Anfrage%20Hostessenwerk">E-Mail senden</a>
-      </div>
-    </section>
-
-    <!-- ANKER: BEWERBUNG -->
-    <section class="pad" id="bewerbung">
-      <h2 class="section-title">Bewerbung</h2>
-      <p style="margin-top:10px;">
-        Du möchtest Hostess werden? Sende uns kurz deine Daten und 2–3 Fotos. Wir melden uns mit den nächsten Schritten.
-      </p>
-      <div style="margin-top:14px;">
-        <!-- TODO: E-Mail ersetzen -->
-        <a class="btn" href="mailto:DEINEEMAIL@DOMAIN.DE?subject=Bewerbung%20Hostessenwerk">Jetzt bewerben</a>
-      </div>
-    </section>
-
-    <div class="spacer"></div>
-
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">Hostessenwerk</div>
+    <div>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
   </div>
+</nav>
+
+<div class="wrap">
+
+<section class="hero">
+  <h1 class="brand">Hostessenwerk</h1>
+  <p class="subline">
+    Eine kuratierte Hostessen- und Promotionagentur für Marken,
+    die Haltung, Präsenz und Wirkung suchen.
+  </p>
+</section>
+
+<div class="rule"></div>
+
+<section id="leistungen" class="pad">
+  <h2 class="section-title">Leistungen</h2>
+  <div class="services">
+    <div>Messe- und Eventhostessen</div>
+    <div>Promotion und Brand Activation</div>
+    <div>Editorial Social Media Content</div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<section id="ueber-uns" class="pad about">
+  <h2 class="section-title">Über uns</h2>
+  <p>
+    Hostessenwerk steht für eine neue Form der Markenrepräsentanz.
+    Nicht laut, nicht beliebig, sondern bewusst ausgewählt.
+  </p>
+  <p>
+    Mit Sitz in Düsseldorf realisieren wir Projekte in ganz Nordrhein-Westfalen
+    – für Marken, die Wert auf Stil, Präzision und glaubwürdige Präsenz legen.
+  </p>
+  <p>
+    Unsere Arbeit beginnt bei der Auswahl, setzt sich in der Haltung fort
+    und zeigt sich im Detail.
+  </p>
+</section>
+
+<div class="rule"></div>
+
+<section id="kontakt" class="pad">
+  <h2 class="section-title">Kontakt</h2>
+  <p>
+    Für Anfragen, Kooperationen oder eine erste Einschätzung.
+  </p>
+  <div class="cta">
+    <a href="mailto:DEINEEMAIL@DOMAIN.DE">Kontakt aufnehmen</a>
+  </div>
+</section>
+
+<div class="spacer"></div>
+</div>
 </body>
 </html>
