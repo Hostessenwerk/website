@@ -1,20 +1,21 @@
-A<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hostessenwerk</title>
 
-<meta name="description" content="Hostessenwerk – Editorial geführte Premium-Hostessen- und Promotionagentur mit Sitz in Düsseldorf. Exklusive Markenauftritte in ganz NRW.">
+<meta name="description" content="Hostessenwerk – Premium Hostessen- und Promotionagentur mit Sitz in Düsseldorf. Professionelle Markenrepräsentanz für Events, Messen und Brand Activations in ganz NRW.">
 
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
 :root{
   --black:#121212;
-  --gray:#2a2a2a;
+  --gray:#2b2b2b;
   --line:rgba(0,0,0,.08);
 }
 
@@ -24,16 +25,16 @@ html{scroll-behavior:smooth;}
 body{
   margin:0;
   font-family:Inter, system-ui, sans-serif;
-  background:#fff;
+  background:#ffffff;
   color:#121212;
 }
 
 /* LAYOUT */
-.wrap{max-width:880px;margin:0 auto;}
-.pad{padding:72px 20px;}
-.spacer{height:96px;}
+.wrap{max-width:920px;margin:0 auto;}
+.pad{padding:88px 24px;}
+.spacer{height:120px;}
 
-/* NAV */
+/* NAVIGATION */
 .nav{
   position:sticky;
   top:0;
@@ -41,91 +42,112 @@ body{
   z-index:10;
 }
 .nav-inner{
-  max-width:880px;
+  max-width:920px;
   margin:0 auto;
-  padding:24px 20px;
+  padding:28px 24px;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
 .nav-brand{
-  font-family:Fraunces, serif;
+  font-family:'Libre Baskerville', serif;
   font-size:18px;
-  font-weight:600;
+  font-weight:700;
 }
 .nav a{
   text-decoration:none;
   color:#121212;
-  margin-left:28px;
+  margin-left:32px;
   font-size:13px;
-  letter-spacing:.08em;
+  letter-spacing:.1em;
 }
 
-/* TYPO */
+/* TYPOGRAFIE */
 .brand{
-  font-family:Fraunces, serif;
+  font-family:'Libre Baskerville', serif;
   font-size:clamp(56px,8vw,96px);
-  line-height:.9;
+  line-height:1.05;
   margin:0;
-  font-weight:600;
+  font-weight:400;
 }
 .subline{
-  margin-top:24px;
+  margin-top:28px;
   font-size:15px;
-  max-width:460px;
-  color:#2a2a2a;
+  max-width:440px;
+  color:#2b2b2b;
 }
 .section-title{
-  font-family:Fraunces, serif;
-  font-size:32px;
-  font-weight:500;
-  margin-bottom:24px;
+  font-family:'Libre Baskerville', serif;
+  font-size:34px;
+  font-weight:400;
+  margin-bottom:32px;
 }
 p{
   font-size:14px;
-  line-height:1.8;
-  max-width:520px;
+  line-height:1.9;
+  max-width:560px;
 }
 
 /* HERO */
-.hero{padding:96px 20px 64px;}
+.hero{
+  padding:120px 24px 72px;
+}
+.hero-images{
+  margin-top:72px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.hero-images img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+}
 
 /* EDITORIAL LINE */
 .rule{
-  width:120px;
+  width:160px;
   height:1px;
   background:#121212;
-  margin:48px 0;
+  margin:96px 0;
 }
 
-/* SERVICES */
+/* LEISTUNGEN */
 .services{
   display:grid;
-  gap:28px;
-  font-family:Fraunces, serif;
-  font-size:22px;
+  gap:32px;
+  font-family:'Libre Baskerville', serif;
+  font-size:21px;
 }
 
 /* ABOUT */
-.about p{margin-bottom:18px;}
+.about p{margin-bottom:22px;}
 
 /* CTA */
 .cta{
-  margin-top:48px;
+  margin-top:56px;
 }
 .cta a{
-  font-family:Fraunces, serif;
+  font-family:'Libre Baskerville', serif;
   text-decoration:none;
   font-size:18px;
   color:#121212;
   border-bottom:1px solid #121212;
-  padding-bottom:4px;
+  padding-bottom:6px;
 }
 
 /* RESPONSIVE */
-@media(max-width:768px){
-  .hero{padding-top:72px;}
-  .spacer{height:64px;}
+@media(max-width:900px){
+  .hero{padding-top:88px;}
+  .hero-images{
+    grid-template-columns:repeat(2,1fr);
+    margin-top:56px;
+  }
+  .hero-images img{height:220px;}
+  .pad{padding:64px 20px;}
+  .rule{margin:72px 0;}
+  .spacer{height:80px;}
 }
 </style>
 </head>
@@ -145,16 +167,25 @@ p{
 
 <div class="wrap">
 
+<!-- HERO -->
 <section class="hero">
   <h1 class="brand">Hostessenwerk</h1>
   <p class="subline">
-    Eine kuratierte Hostessen- und Promotionagentur für Marken,
-    die Haltung, Präsenz und Wirkung suchen.
+    Eine Hostessen- und Promotionagentur für Marken,
+    die Wert auf Präsenz, Qualität und eine stimmige Außenwirkung legen.
   </p>
+
+  <div class="hero-images">
+    <img src="hero-1.jpg" alt="Hostess im Markenumfeld">
+    <img src="hero-2.jpg" alt="Eventhostess im Einsatz">
+    <img src="hero-3.jpg" alt="Promotionteam auf Veranstaltung">
+    <img src="hero-4.jpg" alt="Markenauftritt mit Hostessen">
+  </div>
 </section>
 
 <div class="rule"></div>
 
+<!-- LEISTUNGEN -->
 <section id="leistungen" class="pad">
   <h2 class="section-title">Leistungen</h2>
   <div class="services">
@@ -166,28 +197,35 @@ p{
 
 <div class="rule"></div>
 
+<!-- ÜBER UNS -->
 <section id="ueber-uns" class="pad about">
   <h2 class="section-title">Über uns</h2>
+
   <p>
-    Hostessenwerk steht für eine neue Form der Markenrepräsentanz.
-    Nicht laut, nicht beliebig, sondern bewusst ausgewählt.
+    Hostessenwerk steht für professionelle Markenrepräsentanz – stilvoll,
+    aufmerksam und auf den jeweiligen Markenauftritt abgestimmt.
   </p>
+
   <p>
-    Mit Sitz in Düsseldorf realisieren wir Projekte in ganz Nordrhein-Westfalen
-    – für Marken, die Wert auf Stil, Präzision und glaubwürdige Präsenz legen.
+    Unsere Arbeit orientiert sich am Charakter und den Zielen einer Marke.
+    Ob präsent oder zurückhaltend, aufmerksam oder aktiv – entscheidend ist,
+    dass Auftreten, Kommunikation und Wirkung miteinander im Einklang stehen.
   </p>
+
   <p>
-    Unsere Arbeit beginnt bei der Auswahl, setzt sich in der Haltung fort
-    und zeigt sich im Detail.
+    Mit Sitz in Düsseldorf realisieren wir Projekte in ganz Nordrhein-Westfalen.
+    Wir arbeiten für Unternehmen, Agenturen und Marken, die Wert auf Qualität,
+    Verlässlichkeit und eine professionelle Umsetzung legen.
   </p>
 </section>
 
 <div class="rule"></div>
 
+<!-- KONTAKT -->
 <section id="kontakt" class="pad">
   <h2 class="section-title">Kontakt</h2>
   <p>
-    Für Anfragen, Kooperationen oder eine erste Einschätzung.
+    Für Anfragen, Kooperationen oder eine erste Einschätzung Ihres Vorhabens.
   </p>
   <div class="cta">
     <a href="mailto:DEINEEMAIL@DOMAIN.DE">Kontakt aufnehmen</a>
@@ -196,5 +234,6 @@ p{
 
 <div class="spacer"></div>
 </div>
+
 </body>
 </html>
