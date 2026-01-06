@@ -1,233 +1,392 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hostessenwerk</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta name="description" content="Hostessenwerk – Premium Hostessen- und Promotionagentur mit Sitz in Düsseldorf. Markenpräsenz, die bleibt. Projekte in ganz NRW.">
+  <title>Hostessenagentur NRW | Messe- & Eventhostessen (Schwerpunkt) – Hostessenwerk</title>
+  <meta name="description" content="Hostessenwerk ist Ihre Hostessenagentur für NRW – Schwerpunkt Messe- & Eventhostessen. Ergänzend: Promotion & Brand Activation sowie Event Content Support. NRW-weit inkl. Aachen. Jetzt Projekt anfragen." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="googlebot" content="index,follow,max-image-preview:large" />
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://hostessenwerk.de/" />
+  <link rel="alternate" href="https://hostessenwerk.de/" hreflang="de-DE" />
+  <link rel="alternate" href="https://hostessenwerk.de/" hreflang="x-default" />
 
-<style>
-:root{
-  --black:#121212;
-  --gray:#2b2b2b;
-  --line:rgba(0,0,0,.08);
-}
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#fbfbfb" />
 
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-body{
-  margin:0;
-  font-family:Inter, system-ui, sans-serif;
-  background:#ffffff;
-  color:#121212;
-}
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hostessenwerk" />
+  <meta property="og:title" content="Hostessenagentur NRW | Messe- & Eventhostessen (Schwerpunkt) – Hostessenwerk" />
+  <meta property="og:description" content="Schwerpunkt Messe- & Eventhostessen in NRW. Ergänzend: Promotion & Brand Activation sowie Event Content Support. NRW-weit inkl. Aachen." />
+  <meta property="og:url" content="https://hostessenwerk.de/" />
+  <meta property="og:image" content="https://hostessenwerk.de/og-image.jpg" />
+  <meta property="og:image:alt" content="Hostessenwerk – Hostessenagentur NRW" />
 
-/* LAYOUT */
-.wrap{max-width:920px;margin:0 auto;}
-.pad{padding:100px 24px;}
-.spacer{height:120px;}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hostessenagentur NRW – Hostessenwerk" />
+  <meta name="twitter:description" content="Schwerpunkt Messe- & Eventhostessen in NRW. Ergänzend: Promotion & Event Content. NRW-weit inkl. Aachen." />
+  <meta name="twitter:image" content="https://hostessenwerk.de/og-image.jpg" />
 
-/* NAVIGATION */
-.nav{
-  position:sticky;
-  top:0;
-  background:#fff;
-  z-index:10;
-}
-.nav-inner{
-  max-width:920px;
-  margin:0 auto;
-  padding:28px 24px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.nav-brand{
-  font-family:'Source Serif 4', serif;
-  font-size:18px;
-  font-weight:300;
-}
-.nav a{
-  text-decoration:none;
-  color:#121212;
-  margin-left:32px;
-  font-size:13px;
-  letter-spacing:.14em;
-}
+  <link rel="preload" as="image" href="/hero-1.jpg" fetchpriority="high">
 
-/* TYPO */
-.brand{
-  font-family:'Source Serif 4', serif;
-  font-size:clamp(60px,8vw,104px);
-  line-height:1.05;
-  margin:0;
-  font-weight:300;
-}
-.subline{
-  margin-top:28px;
-  font-size:15px;
-  max-width:440px;
-  color:#2b2b2b;
-}
-.section-title{
-  font-family:'Source Serif 4', serif;
-  font-size:34px;
-  font-weight:300;
-  margin-bottom:40px;
-}
-p{
-  font-size:14px;
-  line-height:1.9;
-  max-width:560px;
-}
-
-/* HERO */
-.hero{
-  padding:140px 24px 80px;
-}
-.hero-images{
-  margin-top:80px;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;
-}
-.hero-images img{
-  width:100%;
-  height:260px;
-  object-fit:cover;
-  display:block;
-  filter:grayscale(12%);
-}
-
-/* EDITORIAL LINE */
-.rule{
-  width:160px;
-  height:1px;
-  background:#121212;
-  margin:120px 0;
-}
-
-/* SERVICES */
-.services{
-  display:grid;
-  gap:36px;
-  font-family:'Source Serif 4', serif;
-  font-size:22px;
-  font-weight:300;
-}
-
-/* CTA */
-.cta{
-  margin-top:60px;
-}
-.cta a{
-  font-family:'Source Serif 4', serif;
-  text-decoration:none;
-  font-size:18px;
-  font-weight:300;
-  color:#121212;
-  border-bottom:1px solid #121212;
-  padding-bottom:6px;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .hero{padding-top:100px;}
-  .hero-images{
-    grid-template-columns:repeat(2,1fr);
-    margin-top:60px;
+  <!-- Entity + Website + Breadcrumb + FAQ (Startseite) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://hostessenwerk.de/#website",
+        "url":"https://hostessenwerk.de/",
+        "name":"Hostessenwerk",
+        "inLanguage":"de-DE"
+      },
+      {
+        "@type":["LocalBusiness","Organization"],
+        "@id":"https://hostessenwerk.de/#business",
+        "name":"Hostessenwerk",
+        "url":"https://hostessenwerk.de/",
+        "logo":"https://hostessenwerk.de/icon.svg",
+        "image":"https://hostessenwerk.de/og-image.jpg",
+        "email":"service@hostessenwerk.de",
+        "telephone":"+49XXXXXXXXXX",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"[Straße Hausnummer]",
+          "postalCode":"[PLZ]",
+          "addressLocality":"Düsseldorf",
+          "addressRegion":"NRW",
+          "addressCountry":"DE"
+        },
+        "areaServed":[
+          {"@type":"AdministrativeArea","name":"Nordrhein-Westfalen"},
+          {"@type":"City","name":"Düsseldorf"},
+          {"@type":"City","name":"Köln"},
+          {"@type":"City","name":"Essen"},
+          {"@type":"City","name":"Dortmund"},
+          {"@type":"City","name":"Aachen"}
+        ],
+        "sameAs":[
+          "https://www.instagram.com/hostessenwerk/"
+        ],
+        "knowsAbout":[
+          "Messehostessen","Eventhostessen","Hostessenagentur NRW",
+          "Promotion","Brand Activation","Sampling","Roadshows",
+          "Event Content","Social Media Content"
+        ],
+        "contactPoint":{
+          "@type":"ContactPoint",
+          "contactType":"Sales",
+          "email":"service@hostessenwerk.de",
+          "telephone":"+49XXXXXXXXXX",
+          "availableLanguage":["de"],
+          "areaServed":"DE"
+        }
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://hostessenwerk.de/#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Startseite","item":"https://hostessenwerk.de/"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"https://hostessenwerk.de/#faq",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"In welchen Regionen ist Hostessenwerk im Einsatz?",
+            "acceptedAnswer":{"@type":"Answer","text":"NRW-weit – unter anderem in Düsseldorf, Köln, Essen, Dortmund und Aachen. Deutschlandweit auf Anfrage – abhängig von Projektumfang und Vorlauf."}
+          },
+          {
+            "@type":"Question",
+            "name":"Was ist der Schwerpunkt von Hostessenwerk?",
+            "acceptedAnswer":{"@type":"Answer","text":"Schwerpunkt sind Messe- und Eventhostessen in NRW: Empfang, Akkreditierung, Gästeführung, Standkommunikation und VIP-Betreuung – markenkonform und briefingsicher."}
+          },
+          {
+            "@type":"Question",
+            "name":"Bietet Hostessenwerk auch Promotion und Brand Activation an?",
+            "acceptedAnswer":{"@type":"Answer","text":"Ja. Ergänzend zum Hostessen-Setup realisieren wir Promotion- und Brand-Activation-Einsätze wie Sampling, Roadshows und Retail Promotions in NRW."}
+          },
+          {
+            "@type":"Question",
+            "name":"Unterstützt Hostessenwerk Event Content und Social Media Content?",
+            "acceptedAnswer":{"@type":"Answer","text":"Ja. Wir unterstützen Event Content und Social Media Content Support vor Ort – zur effizienten Content-Produktion im Live-Kontext, z. B. bei Messe- und Promotion-Einsätzen."}
+          }
+        ]
+      }
+    ]
   }
-  .hero-images img{height:220px;}
-  .pad{padding:72px 20px;}
-  .rule{margin:80px 0;}
-  .spacer{height:80px;}
-}
-</style>
+  </script>
+
+  <style>
+    :root{
+      --bg:#fbfbfb;--surface:#fff;--ink:#111214;--muted:rgba(17,18,20,.72);
+      --line:rgba(17,18,20,.12);--shadow:0 14px 40px rgba(17,18,20,.08);
+      --radius:18px;--max:1120px;--serif:"Source Serif 4",serif;--sans:Inter,system-ui;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--bg)}
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--max);margin:auto;padding:0 18px}
+    .section{padding:64px 0}
+    .tight{padding:44px 0}
+    .divider{border-top:1px solid var(--line)}
+    header{position:sticky;top:0;background:rgba(251,251,251,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:12px;flex-wrap:wrap}
+    .brand{font-family:var(--serif);font-size:18px;text-decoration:none}
+    .nav{display:flex;gap:6px;flex-wrap:wrap}
+    .nav a{font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:8px 10px;text-decoration:none;border-radius:999px}
+    .nav a:hover{background:#fff;border:1px solid var(--line);padding:7px 9px}
+    .hero{padding:56px 0}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:32px;align-items:center}
+    h1{font-family:var(--serif);font-weight:300;font-size:52px;line-height:1.05;margin:0}
+    h2{font-family:var(--serif);font-weight:400;margin:0 0 12px}
+    .subtitle{font-size:16px;line-height:1.7;color:var(--muted);max-width:66ch}
+    .focus-pill{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 12px;box-shadow:var(--shadow);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+    .focus-pill strong{letter-spacing:.08em}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:999px;border:1px solid rgba(17,18,20,.22);font-size:13px;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;background:transparent}
+    .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 8px}
+    .card p{margin:0;color:var(--muted);line-height:1.65}
+    .kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .kpi .card{padding:16px}
+    .kpi strong{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+    details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:10px}
+    summary{cursor:pointer}
+    .legal{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:14px}
+    footer{padding:26px 0;border-top:1px solid var(--line);font-size:12px;color:rgba(17,18,20,.78)}
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:fixed;left:18px;top:18px;width:auto;height:auto;overflow:visible;background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 12px;box-shadow:var(--shadow);z-index:9999}
+    @media(max-width:900px){
+      .hero-grid,.cards,.kpi{grid-template-columns:1fr}
+      h1{font-size:40px}
+    }
+  </style>
 </head>
 
 <body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <div class="nav-brand">Hostessenwerk</div>
-    <div>
-      <a href="#leistungen">Leistungen</a>
-      <a href="#ueber-uns">Über uns</a>
-      <a href="#kontakt">Kontakt</a>
+<header>
+  <div class="wrap">
+    <nav aria-label="Hauptnavigation">
+      <a class="brand" href="/" aria-label="Hostessenwerk Startseite">Hostessenwerk</a>
+      <div class="nav">
+        <a href="#leistungen">Leistungen</a>
+        <a href="/messehostessen-nrw">Messehostessen NRW</a>
+        <a href="/promotion-agentur-nrw">Promotion NRW</a>
+        <a href="/event-content-nrw">Event Content NRW</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="page-title">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="focus-pill" aria-label="Schwerpunkt">
+          <strong>Schwerpunkt</strong> Messe- &amp; Eventhostessen in NRW
+        </div>
+
+        <h1 id="page-title">Hostessenagentur NRW für Messe, Event & Markenauftritt</h1>
+
+        <p class="subtitle">
+          Hostessenwerk ist in NRW im Einsatz – unter anderem in Düsseldorf, Köln, Essen, Dortmund und Aachen.
+          Unser Schwerpunkt sind Messe- &amp; Eventhostessen: markenkonforme Besetzung, klare Briefings, verlässliche On-Site Umsetzung.
+          Ergänzend realisieren wir <a href="/promotion-agentur-nrw">Promotion &amp; Brand Activation</a> sowie
+          <a href="/event-content-nrw">Event Content Support</a>.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#kontakt">Projekt anfragen</a>
+          <a class="btn" href="mailto:service@hostessenwerk.de">E-Mail</a>
+        </div>
+
+        <div class="kpi" aria-label="Leistungsversprechen">
+          <div class="card">
+            <strong>Briefingsicher</strong>
+            <p>Rollen klar, Tonalität sauber, Umsetzung planbar.</p>
+          </div>
+          <div class="card">
+            <strong>Markenkonform</strong>
+            <p>Auftreten und Kommunikation passend zur Zielgruppe.</p>
+          </div>
+          <div class="card">
+            <strong>NRW-weit</strong>
+            <p>Regional stark, skalierbar – inkl. Aachen.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="/hero-1.jpg"
+          alt="Messehostess im Einsatz – professioneller Empfang und Standkommunikation"
+          width="1200"
+          height="800"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </div>
     </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section" id="leistungen" aria-labelledby="leistungen-title">
+    <div class="wrap">
+      <h2 id="leistungen-title">Leistungen in NRW</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Messe- &amp; Eventhostessen (Schwerpunkt)</h3>
+          <p>Empfang, Akkreditierung, Gästeführung, Standkommunikation und VIP-Betreuung – strukturiert, ruhig, professionell.</p>
+          <p style="margin-top:12px"><a class="btn" href="/messehostessen-nrw">Zur Leistung: Messehostessen NRW</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Promotion &amp; Brand Activation</h3>
+          <p>Sampling, Roadshows, Retail Promotions und Live-Formate – mit klarer Einsatzplanung und kampagnenkonformer Umsetzung.</p>
+          <p style="margin-top:12px"><a class="btn" href="/promotion-agentur-nrw">Zur Leistung: Promotion NRW</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Event Content &amp; Social Media Support</h3>
+          <p>On-Site Unterstützung für Content-Produktion im Live-Kontext – für Reichweite, die über den Event hinaus wirkt.</p>
+          <p style="margin-top:12px"><a class="btn" href="/event-content-nrw">Zur Leistung: Event Content NRW</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section" id="ablauf" aria-labelledby="ablauf-title">
+    <div class="wrap">
+      <h2 id="ablauf-title">Ablauf</h2>
+      <div class="cards">
+        <div class="card"><h3>01 Briefing</h3><p>Zielsetzung, Rollen, Tonalität, Einsatzorte, Zeitfenster.</p></div>
+        <div class="card"><h3>02 Planung</h3><p>Passende Profile, Abstimmung, Einsatzplanung, Verantwortlichkeiten.</p></div>
+        <div class="card"><h3>03 Umsetzung</h3><p>Ruhiges Handling on-site, klare Kommunikation, verlässliche Performance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">FAQ</h2>
+
+      <details>
+        <summary><strong>In welchen Städten in NRW seid ihr im Einsatz?</strong></summary>
+        <p>NRW-weit – unter anderem in Düsseldorf, Köln, Essen, Dortmund und Aachen. Deutschlandweit auf Anfrage – abhängig von Projektumfang und Vorlauf.</p>
+      </details>
+
+      <details>
+        <summary><strong>Was ist euer Schwerpunkt?</strong></summary>
+        <p>Schwerpunkt sind Messe- und Eventhostessen in NRW: Empfang, Akkreditierung, Gästeführung, Standkommunikation und VIP-Betreuung – markenkonform und briefingsicher.</p>
+      </details>
+
+      <details>
+        <summary><strong>Bietet ihr auch Promotion und Event Content an?</strong></summary>
+        <p>Ja. Ergänzend realisieren wir Promotion &amp; Brand Activation sowie Event Content Support, damit Live-Einsatz und digitale Verlängerung zusammenpassen.</p>
+      </details>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section" id="kontakt" aria-labelledby="kontakt-title">
+    <div class="wrap">
+      <h2 id="kontakt-title">Kontakt</h2>
+      <p style="color:var(--muted);line-height:1.7">
+        E-Mail: <a href="mailto:service@hostessenwerk.de">service@hostessenwerk.de</a><br>
+        Standort: Düsseldorf · Einsätze in NRW (u. a. Aachen) · deutschlandweit auf Anfrage
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:service@hostessenwerk.de?subject=Projektanfrage%20Hostessenwerk">Projekt anfragen</a>
+        <a class="btn" href="/messehostessen-nrw">Schwerpunkt ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section tight" id="impressum" aria-labelledby="impressum-title">
+    <div class="wrap">
+      <h2 id="impressum-title">Impressum</h2>
+      <div class="legal">
+        <p>
+          <strong>Hostessenwerk</strong><br>
+          Einzelunternehmen<br>
+          Inhaber: <strong>[Vorname Nachname]</strong><br>
+          Anschrift: <strong>[Straße Hausnummer, PLZ Düsseldorf, Deutschland]</strong><br>
+          Telefon: <strong>+49XXXXXXXXXX</strong><br>
+          E-Mail: service@hostessenwerk.de
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section tight" id="datenschutz" aria-labelledby="datenschutz-title">
+    <div class="wrap">
+      <h2 id="datenschutz-title">Datenschutz</h2>
+      <div class="legal">
+        <p>
+          Verantwortlich: Hostessenwerk (Einzelunternehmen)<br>
+          E-Mail: service@hostessenwerk.de
+        </p>
+        <p>
+          Diese Website speichert keine personenbezogenen Daten. Kontakt erfolgt ausschließlich per E-Mail.
+          Server-Logfiles werden durch den Hosting-Provider verarbeitet.
+        </p>
+        <p>Hosting-Provider: <strong>[Hosting-Anbieter einsetzen]</strong></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © <span id="y"></span> Hostessenwerk ·
+    <a href="/messehostessen-nrw">Messehostessen NRW</a> ·
+    <a href="/promotion-agentur-nrw">Promotion NRW</a> ·
+    <a href="/event-content-nrw">Event Content NRW</a> ·
+    <a href="#impressum">Impressum</a> ·
+    <a href="#datenschutz">Datenschutz</a> ·
+    <a href="https://www.instagram.com/hostessenwerk/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <br>
+    NRW-weit im Einsatz – Düsseldorf · Köln · Essen · Dortmund · Aachen
   </div>
-</nav>
+</footer>
 
-<div class="wrap">
-
-<!-- HERO -->
-<section class="hero">
-  <h1 class="brand">Hostessenwerk</h1>
-  <p class="subline">
-    Markenpräsenz, die bleibt — präzise, stilvoll, professionell.
-  </p>
-
-  <div class="hero-images">
-    <img src="hero-1.jpg" alt="">
-    <img src="hero-2.jpg" alt="">
-    <img src="hero-3.jpg" alt="">
-    <img src="hero-4.jpg" alt="">
-  </div>
-</section>
-
-<div class="rule"></div>
-
-<!-- LEISTUNGEN -->
-<section id="leistungen" class="pad">
-  <h2 class="section-title">Leistungen</h2>
-  <div class="services">
-    <div>Messe- und Eventhostessen</div>
-    <div>Promotion und Brand Activation</div>
-    <div>Editorial Social Media Content</div>
-  </div>
-</section>
-
-<div class="rule"></div>
-
-<!-- ÜBER UNS -->
-<section id="ueber-uns" class="pad">
-  <h2 class="section-title">Über uns</h2>
-  <p>
-    Hostessenwerk steht für professionelle Markenrepräsentanz – klar,
-    zuverlässig und auf den jeweiligen Markenauftritt abgestimmt.
-  </p>
-  <p>
-    Unsere Arbeit folgt dem Anspruch, Marken glaubwürdig,
-    souverän und wirkungsvoll nach außen zu vertreten.
-  </p>
-  <p>
-    Mit Sitz in Düsseldorf realisieren wir Projekte in ganz Nordrhein-Westfalen
-    für Unternehmen, Agenturen und Marken mit Verantwortung.
-  </p>
-</section>
-
-<div class="rule"></div>
-
-<!-- KONTAKT -->
-<section id="kontakt" class="pad">
-  <h2 class="section-title">Kontakt</h2>
-  <p>
-    Für Anfragen, Kooperationen oder eine erste Einschätzung Ihres Vorhabens.
-  </p>
-  <div class="cta">
-    <a href="mailto:DEINEEMAIL@DOMAIN.DE">Kontakt aufnehmen</a>
-  </div>
-</section>
-
-<div class="spacer"></div>
-</div>
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
