@@ -1,19 +1,53 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Event Content NRW | Social Media Content Support vor Ort – Hostessenwerk</title>
-  <meta name="description" content="Event Content & Social Media Content Support in NRW: On-Site Unterstützung, Koordination und reibungslose Abläufe für Content im Live-Kontext. NRW-weit inkl. Aachen." />
+  <meta name="description" content="Event Content & Social Media Content Support in NRW: On-Site Koordination, Timing und reibungslose Abläufe für Content im Live-Kontext. NRW-weit inkl. Aachen." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
 
   <link rel="canonical" href="https://hostessenwerk.de/event-content-nrw" />
+  <link rel="alternate" href="https://hostessenwerk.de/event-content-nrw" hreflang="de-DE" />
+  <link rel="alternate" href="https://hostessenwerk.de/event-content-nrw" hreflang="x-default" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#fbfbfb" />
+
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hostessenwerk" />
+  <meta property="og:title" content="Event Content NRW – Hostessenwerk" />
+  <meta property="og:description" content="On-site Support für Content im Live-Kontext. NRW-weit inkl. Aachen." />
+  <meta property="og:url" content="https://hostessenwerk.de/event-content-nrw" />
+  <meta property="og:image" content="https://hostessenwerk.de/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Event Content NRW – Hostessenwerk" />
+  <meta name="twitter:description" content="Social Media Content Support vor Ort – Timing, Koordination, Integration." />
+  <meta name="twitter:image" content="https://hostessenwerk.de/og-image.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="/hero-3-1280.jpg" fetchpriority="high">
 
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@graph":[
+      {
+        "@type":"WebPage",
+        "@id":"https://hostessenwerk.de/event-content-nrw#webpage",
+        "url":"https://hostessenwerk.de/event-content-nrw",
+        "name":"Event Content NRW – Hostessenwerk",
+        "inLanguage":"de-DE"
+      },
       {
         "@type":["LocalBusiness","Organization"],
         "@id":"https://hostessenwerk.de/#business",
@@ -23,13 +57,35 @@
         "image":"https://hostessenwerk.de/og-image.jpg",
         "email":"service@hostessenwerk.de",
         "telephone":"+49XXXXXXXXXX",
-        "address":{"@type":"PostalAddress","streetAddress":"[Straße Hausnummer]","postalCode":"[PLZ]","addressLocality":"Düsseldorf","addressRegion":"NRW","addressCountry":"DE"},
-        "areaServed":[{"@type":"AdministrativeArea","name":"Nordrhein-Westfalen"},{"@type":"City","name":"Düsseldorf"},{"@type":"City","name":"Köln"},{"@type":"City","name":"Essen"},{"@type":"City","name":"Dortmund"},{"@type":"City","name":"Aachen"}],
-        "sameAs":["https://www.instagram.com/hostessenwerk/"],
-        "knowsAbout":["Event Content","Social Media Content","On-Site Support","Content Koordination"]
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"[Straße Hausnummer]",
+          "postalCode":"[PLZ]",
+          "addressLocality":"Düsseldorf",
+          "addressRegion":"Nordrhein-Westfalen",
+          "addressCountry":"DE"
+        },
+        "areaServed":[
+          {"@type":"AdministrativeArea","name":"Nordrhein-Westfalen"},
+          {"@type":"City","name":"Düsseldorf"},
+          {"@type":"City","name":"Köln"},
+          {"@type":"City","name":"Essen"},
+          {"@type":"City","name":"Dortmund"},
+          {"@type":"City","name":"Aachen"}
+        ],
+        "sameAs":["https://www.instagram.com/hostessenwerk/"]
+      },
+      {
+        "@type":"Service",
+        "@id":"https://hostessenwerk.de/event-content-nrw#service",
+        "name":"Event Content NRW",
+        "serviceType":"Event Content & Social Media Content Support",
+        "provider":{"@id":"https://hostessenwerk.de/#business"},
+        "areaServed":"Nordrhein-Westfalen"
       },
       {
         "@type":"BreadcrumbList",
+        "@id":"https://hostessenwerk.de/event-content-nrw#breadcrumb",
         "itemListElement":[
           {"@type":"ListItem","position":1,"name":"Startseite","item":"https://hostessenwerk.de/"},
           {"@type":"ListItem","position":2,"name":"Event Content NRW","item":"https://hostessenwerk.de/event-content-nrw"}
@@ -37,10 +93,11 @@
       },
       {
         "@type":"FAQPage",
+        "@id":"https://hostessenwerk.de/event-content-nrw#faq",
         "mainEntity":[
           {"@type":"Question","name":"Was ist Event Content?","acceptedAnswer":{"@type":"Answer","text":"Event Content sind Foto-, Video- und Kurzformate, die direkt während eines Events entstehen – z. B. zur Social-Media-Verlängerung oder Kampagnenunterstützung."}},
           {"@type":"Question","name":"Übernimmt Hostessenwerk On-Site Support für Content?","acceptedAnswer":{"@type":"Answer","text":"Ja. Wir unterstützen vor Ort bei Ablaufkoordination, Timing und Abstimmungen, damit Content-Produktion effizient im Eventbetrieb funktioniert."}},
-          {"@type":"Question","name":"Lässt sich Event Content mit Messe oder Promotion kombinieren?","acceptedAnswer":{"@type":"Answer","text":"Ja. In Kombination mit Messehostessen oder Promotion entstehen konsistente Markenauftritte: Live-Interaktion vor Ort plus digitale Verlängerung über Social Media."}}
+          {"@type":"Question","name":"Lässt sich Event Content mit Messe oder Promotion kombinieren?","acceptedAnswer":{"@type":"Answer","text":"Ja. In Kombination mit Messehostessen oder Promotion entsteht ein konsistenter Markenauftritt: Live-Interaktion plus digitale Verlängerung."}}
         ]
       }
     ]
@@ -48,31 +105,60 @@
   </script>
 
   <style>
-    :root{--bg:#fbfbfb;--surface:#fff;--ink:#111214;--muted:rgba(17,18,20,.72);--line:rgba(17,18,20,.12);--shadow:0 14px 40px rgba(17,18,20,.08);--radius:18px;--max:1120px;--serif:"Source Serif 4",serif;--sans:Inter,system-ui}
+    :root{
+      --bg:#fbfbfb;--surface:#fff;--ink:#111214;--muted:rgba(17,18,20,.72);
+      --line:rgba(17,18,20,.12);--shadow:0 14px 40px rgba(17,18,20,.08);
+      --radius:18px;--max:1120px;--serif:"Source Serif 4",serif;
+      --sans:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
     *{box-sizing:border-box}
-    body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--bg)}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6}
     a{color:inherit}
-    .wrap{max-width:var(--max);margin:auto;padding:0 18px}
-    .section{padding:64px 0}.tight{padding:44px 0}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+    .section{padding:clamp(42px,6vw,76px) 0}
     .divider{border-top:1px solid var(--line)}
-    header{position:sticky;top:0;background:rgba(251,251,251,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
-    nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:12px;flex-wrap:wrap}
+
+    header{position:sticky;top:0;background:rgba(251,251,251,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
     .brand{font-family:var(--serif);font-size:18px;text-decoration:none}
-    .nav{display:flex;gap:6px;flex-wrap:wrap}
-    .nav a{font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:8px 10px;text-decoration:none;border-radius:999px}
-    .nav a:hover{background:#fff;border:1px solid var(--line);padding:7px 9px}
-    h1{font-family:var(--serif);font-weight:300;font-size:46px;line-height:1.05;margin:0}
-    h2{font-family:var(--serif);font-weight:400;margin:0 0 12px}
-    p{color:var(--muted);line-height:1.75}
-    .hero{padding:56px 0}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:999px;border:1px solid rgba(17,18,20,.22);font-size:13px;text-transform:uppercase;letter-spacing:.1em;text-decoration:none}
+    .nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .nav a{font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:9px 12px;text-decoration:none;border-radius:999px;border:1px solid transparent}
+    .nav a:hover{background:#fff;border-color:var(--line)}
+
+    .hero-grid{display:grid;grid-template-columns:1fr;gap:22px;align-items:center}
+    @media(min-width:960px){.hero-grid{grid-template-columns:1.08fr .92fr;gap:32px}}
+
+    .pill{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 12px;box-shadow:var(--shadow);font-size:12px;letter-spacing:.08em;text-transform:uppercase;width:fit-content}
+    h1{font-family:var(--serif);font-weight:300;font-size:clamp(34px,4.6vw,54px);line-height:1.05;margin:14px 0 10px}
+    h2{font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.6vw,30px);margin:0 0 14px}
+    h3{margin:0 0 8px;font-size:16px}
+    .lead{margin:0;color:var(--muted);font-size:clamp(15px,1.6vw,17px);line-height:1.75;max-width:72ch}
+
+    .bullets{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px;max-width:75ch}
+    .bullets li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow);color:var(--muted)}
+    .bullets strong{color:var(--ink);font-weight:600}
+
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:999px;border:1px solid rgba(17,18,20,.22);font-size:13px;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;background:transparent}
     .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+
+    .hero-media{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .hero-media .ratio{aspect-ratio:3/2;width:100%}
+    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center}
+    @media(min-width:960px){.hero-media .ratio{aspect-ratio:4/3}}
+
+    .cards{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:860px){.cards{grid-template-columns:repeat(3,1fr)}}
     .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-    details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:10px}
-    footer{padding:26px 0;border-top:1px solid var(--line);font-size:12px;color:rgba(17,18,20,.78)}
-    @media(max-width:900px){.cards{grid-template-columns:1fr}h1{font-size:38px}}
+    .card p{margin:0;color:var(--muted);line-height:1.7}
+
+    details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:10px;box-shadow:var(--shadow)}
+    summary{cursor:pointer}
+    details p{margin:10px 0 0;color:var(--muted);line-height:1.7}
+
+    footer{padding:22px 0;border-top:1px solid var(--line);font-size:12px;color:rgba(17,18,20,.78)}
   </style>
 </head>
 
@@ -92,43 +178,78 @@
 </header>
 
 <main>
-  <section class="hero">
-    <div class="wrap">
-      <h1>Event Content &amp; Social Media Content Support in NRW</h1>
-      <p>
-        Hostessenwerk unterstützt Event Content und Social Media Content Support vor Ort – als operativer Hebel,
-        damit Content-Produktion im Live-Kontext effizient und ohne Reibungsverluste funktioniert.
-        NRW-weit im Einsatz – unter anderem in Düsseldorf, Köln, Essen, Dortmund und Aachen.
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:service@hostessenwerk.de?subject=Projektanfrage%20Event%20Content%20NRW">Projekt anfragen</a>
-        <a class="btn" href="/messehostessen-nrw">Messehostessen (Schwerpunkt)</a>
-        <a class="btn" href="/promotion-agentur-nrw">Promotion ergänzen</a>
+
+  <section class="section" aria-labelledby="page-title">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="pill"><strong>Leistung</strong>&nbsp;Event Content Support</div>
+        <h1 id="page-title">Event Content NRW – Social Media Support im Live-Betrieb</h1>
+        <p class="lead">
+          Wir unterstützen vor Ort als operative Schnittstelle – damit Content-Produktion im laufenden Eventbetrieb
+          effizient funktioniert und sauber in die Abläufe integriert ist. NRW-weit – inkl. Aachen.
+        </p>
+
+        <ul class="bullets" aria-label="Support-Fokus">
+          <li><strong>On-site Koordination:</strong> Abstimmung, Routing und Ansprechpartner-Logik – klar geregelt.</li>
+          <li><strong>Timing &amp; Taktung:</strong> Slots, Übergaben und Prioritäten – ohne Reibungsverluste.</li>
+          <li><strong>Integration:</strong> Content-Produktion läuft parallel, ohne den Eventbetrieb auszubremsen.</li>
+        </ul>
+
+        <div class="cta">
+          <a class="btn primary" href="mailto:service@hostessenwerk.de?subject=Projektanfrage%20Event%20Content%20NRW">Projekt anfragen</a>
+          <a class="btn" href="/messehostessen-nrw">Messehostessen ergänzen</a>
+          <a class="btn" href="/promotion-agentur-nrw">Promotion ergänzen</a>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-label="Key Visual">
+        <div class="ratio">
+          <img
+            src="/hero-3-1280.jpg"
+            srcset="/hero-3-640.jpg 640w, /hero-3-960.jpg 960w, /hero-3-1280.jpg 1280w, /hero-3-1600.jpg 1600w"
+            sizes="(max-width: 960px) 100vw, 520px"
+            alt="Content-Produktion im Event – Koordination und Live-Ablauf"
+            width="1600"
+            height="1200"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <section class="section">
+  <section class="section" aria-labelledby="support-title">
     <div class="wrap">
-      <h2>Wofür wir unterstützen</h2>
+      <h2 id="support-title">Wofür wir unterstützen</h2>
       <div class="cards">
-        <div class="card"><h3>On-Site Support</h3><p>Timing, Abstimmungen, Organisation – damit das Team produzieren kann.</p></div>
-        <div class="card"><h3>Event Content</h3><p>Content im Live-Kontext für Social-Media-Verlängerung und Kampagnen.</p></div>
-        <div class="card"><h3>Integration</h3><p>Saubere Einbindung in Messe- und Promotion-Abläufe.</p></div>
+        <article class="card">
+          <h3>On-Site Support</h3>
+          <p>Organisation, Abstimmungen und saubere Übergaben – damit das Content-Team produzieren kann.</p>
+        </article>
+        <article class="card">
+          <h3>Event Content</h3>
+          <p>Foto/Video/Short-Formate im Live-Kontext – für Social-Media-Verlängerung und Kampagnenlogik.</p>
+        </article>
+        <article class="card">
+          <h3>Integration in Abläufe</h3>
+          <p>Saubere Einbindung in Messe- und Promotion-Setups – ohne „Content-Chaos“ im Betrieb.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <section class="section tight">
+  <section class="section" aria-labelledby="kombination-title">
     <div class="wrap">
-      <h2>Beste Wirkung in Kombination</h2>
-      <p>
+      <h2 id="kombination-title">Beste Wirkung in Kombination</h2>
+      <p class="lead" style="max-width:78ch">
         Event Content skaliert Wirkung, wenn live bereits Substanz da ist.
-        Deshalb kombinieren viele Projekte Event Content mit <a href="/messehostessen-nrw">Messehostessen NRW</a>
+        Deshalb kombinieren viele Setups Event Content mit <a href="/messehostessen-nrw">Messehostessen</a>
         oder <a href="/promotion-agentur-nrw">Promotion &amp; Brand Activation</a>.
       </p>
     </div>
@@ -136,34 +257,44 @@
 
   <div class="divider"></div>
 
-  <section class="section" id="faq">
+  <section class="section" id="faq" aria-labelledby="faq-title">
     <div class="wrap">
-      <h2>FAQ</h2>
+      <h2 id="faq-title">FAQ</h2>
 
       <details>
         <summary><strong>Was ist Event Content?</strong></summary>
-        <p>Event Content sind Foto-, Video- und Kurzformate, die direkt während eines Events entstehen – z. B. zur Social-Media-Verlängerung oder Kampagnenunterstützung.</p>
+        <p>Foto-, Video- und Kurzformate, die während eines Events entstehen – z. B. zur Social-Media-Verlängerung oder Kampagnenunterstützung.</p>
       </details>
 
       <details>
-        <summary><strong>Übernimmt Hostessenwerk On-Site Support für Content?</strong></summary>
-        <p>Ja. Wir unterstützen vor Ort bei Ablaufkoordination, Timing und Abstimmungen, damit Content-Produktion effizient im Eventbetrieb funktioniert.</p>
+        <summary><strong>Übernehmt ihr On-Site Support für Content?</strong></summary>
+        <p>Ja. Wir unterstützen bei Ablaufkoordination, Timing und Abstimmungen, damit Content-Produktion effizient im Eventbetrieb funktioniert.</p>
       </details>
 
       <details>
-        <summary><strong>Lässt sich Event Content mit Messe oder Promotion kombinieren?</strong></summary>
-        <p>Ja. In Kombination mit Messehostessen oder Promotion entstehen konsistente Markenauftritte: Live-Interaktion vor Ort plus digitale Verlängerung über Social Media.</p>
+        <summary><strong>Lässt sich das mit Messe oder Promotion kombinieren?</strong></summary>
+        <p>Ja. In Kombination entsteht ein konsistenter Markenauftritt: Live-Interaktion vor Ort plus digitale Verlängerung.</p>
       </details>
+
+      <div class="cta" style="margin-top:18px">
+        <a class="btn primary" href="mailto:service@hostessenwerk.de?subject=Projektanfrage%20Event%20Content%20NRW">Projekt anfragen</a>
+        <a class="btn" href="/">Zur Startseite</a>
+      </div>
     </div>
   </section>
+
 </main>
 
 <footer>
   <div class="wrap">
-    © <span id="y"></span> Hostessenwerk · <a href="/">Startseite</a> ·
+    © <span id="y"></span> Hostessenwerk ·
     <a href="/messehostessen-nrw">Messehostessen NRW</a> ·
-    <a href="/promotion-agentur-nrw">Promotion NRW</a>
-    <br>NRW-weit im Einsatz – Düsseldorf · Köln · Essen · Dortmund · Aachen
+    <a href="/promotion-agentur-nrw">Promotion NRW</a> ·
+    <a href="/event-content-nrw">Event Content NRW</a> ·
+    <a href="/impressum">Impressum</a> ·
+    <a href="/datenschutz">Datenschutz</a> ·
+    <a href="https://www.instagram.com/hostessenwerk/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <br />NRW-weit im Einsatz – Düsseldorf · Köln · Essen · Dortmund · Aachen
   </div>
 </footer>
 
