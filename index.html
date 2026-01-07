@@ -36,26 +36,12 @@
 
   <link rel="preload" as="image" href="/hero-1-1280.jpg" fetchpriority="high">
 
-  <!-- Structured Data (bereinigt: keine Telefonnummer, keine Adresse) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@graph":[
-      {
-        "@type":"WebSite",
-        "@id":"https://hostessenwerk.de/#website",
-        "url":"https://hostessenwerk.de/",
-        "name":"Hostessenwerk",
-        "inLanguage":"de-DE"
-      },
-      {
-        "@type":"WebPage",
-        "@id":"https://hostessenwerk.de/#webpage",
-        "url":"https://hostessenwerk.de/",
-        "name":"Hostessenwerk – Startseite",
-        "isPartOf":{"@id":"https://hostessenwerk.de/#website"},
-        "inLanguage":"de-DE"
-      },
+      {"@type":"WebSite","@id":"https://hostessenwerk.de/#website","url":"https://hostessenwerk.de/","name":"Hostessenwerk","inLanguage":"de-DE"},
+      {"@type":"WebPage","@id":"https://hostessenwerk.de/#webpage","url":"https://hostessenwerk.de/","name":"Hostessenwerk – Startseite","isPartOf":{"@id":"https://hostessenwerk.de/#website"},"inLanguage":"de-DE"},
       {
         "@type":"Organization",
         "@id":"https://hostessenwerk.de/#organization",
@@ -64,16 +50,8 @@
         "logo":"https://hostessenwerk.de/icon.svg",
         "image":"https://hostessenwerk.de/og-image.jpg",
         "email":"service@hostessenwerk.de",
-        "sameAs":[
-          "https://www.instagram.com/hostessenwerk/"
-        ],
-        "contactPoint":{
-          "@type":"ContactPoint",
-          "contactType":"Sales",
-          "email":"service@hostessenwerk.de",
-          "availableLanguage":["de"],
-          "areaServed":"DE"
-        }
+        "sameAs":["https://www.instagram.com/hostessenwerk/"],
+        "contactPoint":{"@type":"ContactPoint","contactType":"Sales","email":"service@hostessenwerk.de","availableLanguage":["de"],"areaServed":"DE"}
       }
     ]
   }
@@ -119,8 +97,24 @@
 
     .cards{display:grid;gap:16px}
     @media(min-width:860px){.cards{grid-template-columns:repeat(3,1fr)}}
-    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
-    .card p{margin:0;color:var(--muted)}
+
+    /* Clickable card */
+    .card-link{
+      display:block;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow);
+      text-decoration:none;
+      transition:transform .12s ease, border-color .12s ease;
+    }
+    .card-link p{margin:0;color:var(--muted)}
+    .card-link:hover{transform:translateY(-2px);border-color:rgba(17,18,20,.22)}
+    .card-link:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+    .card-meta{margin-top:12px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(17,18,20,.6)}
+    .arrow{display:inline-block;transform:translateY(-1px)}
 
     footer{padding:24px 0;border-top:1px solid var(--line);font-size:12px;color:rgba(17,18,20,.78)}
   </style>
@@ -143,7 +137,6 @@
 
 <main>
 
-  <!-- HERO -->
   <section class="section">
     <div class="wrap hero">
       <div>
@@ -166,30 +159,34 @@
 
   <div class="divider"></div>
 
-  <!-- LEISTUNGEN -->
   <section class="section" id="leistungen">
     <div class="wrap">
       <h2>Leistungen</h2>
+
       <div class="cards">
-        <div class="card">
-          <h3>Messe & Event Hostessen</h3>
+        <a class="card-link" href="/messe-event-hostessen.html" aria-label="Messe & Event Hostessen – Details ansehen">
+          <h3>Messe &amp; Event Hostessen</h3>
           <p>Professionelle Repräsentanz, souveräner Service und reibungslose Abläufe.</p>
-        </div>
-        <div class="card">
-          <h3>Promotion & Brand Activation</h3>
+          <div class="card-meta">Details ansehen <span class="arrow">→</span></div>
+        </a>
+
+        <a class="card-link" href="/promotion-brand-activation.html" aria-label="Promotion & Brand Activation – Details ansehen">
+          <h3>Promotion &amp; Brand Activation</h3>
           <p>Aktivierung mit Wirkung – zielgerichtet, markenkonform und messbar.</p>
-        </div>
-        <div class="card">
+          <div class="card-meta">Details ansehen <span class="arrow">→</span></div>
+        </a>
+
+        <a class="card-link" href="/social-media-content.html" aria-label="Social Media Content – Details ansehen">
           <h3>Social Media Content</h3>
           <p>Live-nahe Unterstützung für Content, der Reichweite und Markenwert erzeugt.</p>
-        </div>
+          <div class="card-meta">Details ansehen <span class="arrow">→</span></div>
+        </a>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- ÜBER UNS -->
   <section class="section" id="ueberuns">
     <div class="wrap">
       <h2>Über uns</h2>
@@ -203,7 +200,6 @@
 
   <div class="divider"></div>
 
-  <!-- KONTAKT -->
   <section class="section" id="kontakt">
     <div class="wrap">
       <h2>Projekt anfragen</h2>
@@ -211,9 +207,7 @@
         E-Mail: <a href="mailto:service@hostessenwerk.de">service@hostessenwerk.de</a>
       </p>
       <div class="cta">
-        <a class="btn primary" href="mailto:service@hostessenwerk.de?subject=Projektanfrage%20Hostessenwerk">
-          Projekt anfragen
-        </a>
+        <a class="btn primary" href="mailto:service@hostessenwerk.de?subject=Projektanfrage%20Hostessenwerk">Projekt anfragen</a>
         <a class="btn" href="/hostess-werden">Jetzt Hostesse werden</a>
       </div>
     </div>
